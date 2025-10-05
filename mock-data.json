@@ -1,0 +1,161 @@
+[
+    {
+        "identifier": "20251002011347",
+        "caption": "Mock EPIC data for Spectra project - Earth viewed from DSCOVR satellite during government shutdown",
+        "image": "epic_1b_20251002011347",
+        "version": "03",
+        "centroid_coordinates": {
+            "lat": 15.2,
+            "lon": -45.8
+        },
+        "dscovr_j2000_position": {
+            "x": 1256894.321,
+            "y": -654321.123,
+            "z": 298456.789
+        },
+        "lunar_j2000_position": {
+            "x": 325689.123,
+            "y": -125463.987,
+            "z": 12548.369
+        },
+        "sun_j2000_position": {
+            "x": 14523698.741,
+            "y": -5236985.412,
+            "z": 125463.258
+        },
+        "attitude_quaternions": {
+            "q0": 0.7071,
+            "q1": 0.7071,
+            "q2": 0.0,
+            "q3": 0.0
+        },
+        "date": "2025-10-02 01:13:47",
+        "coords": {
+            "centroid_coordinates": {
+                "lat": 15.2,
+                "lon": -45.8
+            },
+            "dscovr_j2000_position": {
+                "x": 1256894.321,
+                "y": -654321.123,
+                "z": 298456.789
+            },
+            "lunar_j2000_position": {
+                "x": 325689.123,
+                "y": -125463.987,
+                "z": 12548.369
+            },
+            "sun_j2000_position": {
+                "x": 14523698.741,
+                "y": -5236985.412,
+                "z": 125463.258
+            }
+        }
+    },
+    {
+        "identifier": "20251002010000",
+        "caption": "Mock EPIC image showing North America and Atlantic Ocean - data unavailable due to shutdown",
+        "image": "epic_1b_20251002010000",
+        "version": "03",
+        "centroid_coordinates": {
+            "lat": 35.1,
+            "lon": -75.3
+        },
+        "dscovr_j2000_position": {
+            "x": 1256894.321,
+            "y": -654321.123,
+            "z": 298456.789
+        },
+        "lunar_j2000_position": {
+            "x": 325689.123,
+            "y": -125463.987,
+            "z": 12548.369
+        },
+        "sun_j2000_position": {
+            "x": 14523698.741,
+            "y": -5236985.412,
+            "z": 125463.258
+        },
+        "attitude_quaternions": {
+            "q0": 0.7071,
+            "q1": 0.7071,
+            "q2": 0.0,
+            "q3": 0.0
+        },
+        "date": "2025-10-02 01:00:00",
+        "coords": {
+            "centroid_coordinates": {
+                "lat": 35.1,
+                "lon": -75.3
+            },
+            "dscovr_j2000_position": {
+                "x": 1256894.321,
+                "y": -654321.123,
+                "z": 298456.789
+            },
+            "lunar_j2000_position": {
+                "x": 325689.123,
+                "y": -125463.987,
+                "z": 12548.369
+            },
+            "sun_j2000_position": {
+                "x": 14523698.741,
+                "y": -5236985.412,
+                "z": 125463.258
+            }
+        }
+    },
+    {
+        "identifier": "20251001230000",
+        "caption": "Mock EPIC image showing Pacific Ocean and Australia - simulated during service interruption",
+        "image": "epic_1b_20251001230000",
+        "version": "03",
+        "centroid_coordinates": {
+            "lat": -25.3,
+            "lon": 135.7
+        },
+        "dscovr_j2000_position": {
+            "x": 1256894.321,
+            "y": -654321.123,
+            "z": 298456.789
+        },
+        "lunar_j2000_position": {
+            "x": 325689.123,
+            "y": -125463.987,
+            "z": 12548.369
+        },
+        "sun_j2000_position": {
+            "x": 14523698.741,
+            "y": -5236985.412,
+            "z": 125463.258
+        },
+        "attitude_quaternions": {
+            "q0": 0.7071,
+            "q1": 0.7071,
+            "q2": 0.0,
+            "q3": 0.0
+        },
+        "date": "2025-10-01 23:00:00",
+        "coords": {
+            "centroid_coordinates": {
+                "lat": -25.3,
+                "lon": 135.7
+            },
+            "dscovr_j2000_position": {
+                "x": 1256894.321,
+                "y": -654321.123,
+                "z": 298456.789
+            },
+            "lunar_j2000_position": {
+                "x": 325689.123,
+                "y": -125463.987,
+                "z": 12548.369
+            },
+            "sun_j2000_position": {
+                "x": 14523698.741,
+                "y": -5236985.412,
+                "z": 125463.258
+            }
+        }
+    }
+]

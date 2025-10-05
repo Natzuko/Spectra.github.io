@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spectra | NASA EPIC Viewer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="logo-section">
+                <h1>SPECTRA</h1>
+                <p class="subtitle">NASA EPIC Earth Monitor</p>
+            </div>
+            <div class="api-status">
+                <span id="api-status">Initializing system...</span>
+            </div>
+        </header>
+
+        <section class="art-description">
+            <p><strong>SPECTRA</strong> es una obra audiovisual en tiempo real que utiliza los datos del satélite EPIC
+                de la NASA para construir un atlas vivo del cielo. En medio del <strong>shutdown y la interrupción del
+                    acceso a
+                    la información celeste</strong>, la obra transforma esa ausencia en experiencia.</p>
+        </section>
+
+        <nav class="control-panel">
+            <button class="control-btn primary" onclick="loadData('api')">
+                <span class="btn-icon">🛰️</span>
+                Live NASA Data
+            </button>
+            <button class="control-btn secondary" onclick="loadData('mock')">
+                <span class="btn-icon">🔸</span>
+                Demo Data
+            </button>
+            <button class="control-btn tertiary" onclick="showNASAEmbed()">
+                <span class="btn-icon">🌐</span>
+                NASA Web
+            </button>
+            <button class="control-btn outline" onclick="clearDebug()">
+                <span class="btn-icon">🗑️</span>
+                Clear Log
+            </button>
+        </nav>
+
+        <main class="content-area">
+            <div id="status" class="status-card loading">
+                <div class="status-icon">⏳</div>
+                <div class="status-text">Select a data source to begin exploration</div>
+            </div>
+
+            <div id="content">
+                <section id="image-container" class="image-gallery"></section>
+
+                <section id="nasa-embed" class="embed-section" style="display: none;">
+                    <div class="section-header">
+                        <h2>NASA EPIC Enhanced Images</h2>
+                        <p class="section-subtitle">Direct feed from NASA's Earth Polychromatic Imaging Camera</p>
+                    </div>
+                    <div class="embed-wrapper">
+                        <iframe src="https://epic.gsfc.nasa.gov/enhanced" width="100%" height="600" frameborder="0"
+                            allowfullscreen title="NASA EPIC Enhanced Images">
+                        </iframe>
+                    </div>
+                    <div class="embed-footer">
+                        <p>Live embedded content from epic.gsfc.nasa.gov</p>
+                    </div>
+                </section>
+            </div>
+        </main>
+
+        <aside class="debug-section">
+            <div class="section-header">
+                <h3>System Monitor</h3>
+                <div class="system-status">
+                    <span class="status-indicator" id="system-status">●</span>
+                    <span>Real-time Diagnostics</span>
+                </div>
+            </div>
+            <div class="debug-panel">
+                <div id="debug-data" class="debug-content">
+                    <div class="debug-entry">System initialized. Waiting for commands...</div>
+                </div>
+            </div>
+        </aside>
+
+        <section class="info-section">
+            <div class="info-grid">
+                <div class="info-card">
+                    <div class="info-icon">🌍</div>
+                    <h4>Earth Observation</h4>
+                    <p>Real-time imagery from NASA's DSCOVR satellite orbiting 1 million miles from Earth</p>
+                </div>
+                <div class="info-card">
+                    <div class="info-icon">📡</div>
+                    <h4>EPIC Camera</h4>
+                    <p>10-channel spectrometer capturing Earth's atmosphere, land, and oceans</p>
+                </div>
+                <div class="info-card">
+                    <div class="info-icon">⚡</div>
+                    <h4>Live Data</h4>
+                    <p>Direct connection to NASA's API with automatic fallback systems</p>
+                </div>
+            </div>
+
+            <div class="data-source-info">
+                <div class="source-indicator">
+                    <span class="indicator-label">Data Source:</span>
+                    <span id="data-source" class="indicator-value">—</span>
+                </div>
+                <div class="source-indicator">
+                    <span class="indicator-label">Last Update:</span>
+                    <span id="last-update" class="indicator-value">—</span>
+                </div>
+                <div class="source-indicator">
+                    <span class="indicator-label">System Time:</span>
+                    <span id="current-time" class="indicator-value">—</span>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer class="main-footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Spectra</h4>
+                <p>Data provided by NASA EPIC API</p>
+            </div>
+            <div class="footer-section">
+                <p>Natalia Scuzarello</p>
+                <p><a href="https://www.natscuzarello.com" target="_blank">www.natscuzarello.com</a></p>
+            </div>
+            <div class="footer-section">
+                <p>&copy; 2025 Spectra Project</p>
+                <p>Created during the 2025 US government shutdown</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
