@@ -40,8 +40,7 @@ La arquitectura del sistema integra un entorno web con **TouchDesigner**, conect
 - `#D4E5DE` — mint-frost  
 - `#12A7B8` — aqua-cyan  
 
-## 👩‍💻 **Natalia Scuzarello**  
-[www.natscuzarello.com](https://www.natscuzarello.com)
+## 👩‍💻 **Natalia Scuzarello**  [www.natscuzarello.com](https://www.natscuzarello.com)
 
 ---
 
